@@ -1,0 +1,526 @@
+/* css/style.css */
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo geral */
+body {
+  font-family: 'Segoe UI', 'Montserrat', sans-serif;
+  background-color: #fcfcfc;
+  color: #000000;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Impede scroll horizontal */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Menu mobile aberto - bloqueia scroll do body */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background-color: #1c1c1c;
+  border-radius: 30px;
+  margin: 1rem auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar container */
+.navbar-container {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+/* Menu hambúrguer */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  z-index: 1001;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 5px 20px;
+  background-color: transparent;
+}
+
+/* Menu de navegação - versão desktop */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+  background: #1e90ff;
+  border-radius: 6px;
+}
+
+.nav-menu .logo img {
+  height: 38px;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.hero span {
+  color: #1e90ff;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: -50px auto -69px; 
+  position: relative;
+  z-index: 5; /* Abaixo do texto */
+  transition: transform 0.5s ease;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: -80px
+}
+
+.hello img {
+  max-width: 80px;
+  height: auto;
+  margin: 0 auto -15px; /* Margem inferior negativa */
+  display: block;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); /* Profundidade */
+}
+
+/* Projetos */
+.projects-section {
+  background: #1c1c1c;
+  color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  margin: 3rem auto;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.projects-header h2 {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.projects-header .projects-subtitle {
+  color: #ccc;
+  font-size: 1rem;
+  text-align: right;
+  padding: 8px;
+  line-height: 1.4;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #8FBBDB;
+  margin: 15px 0;
+  width: 100%;
+}
+
+/* Layers dos Projects */
+.projects {
+  display: flex;
+  gap: 4rem; 
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0; 
+}
+
+.project-card {
+  position: relative;
+  width: 280px;
+  height: 360px;
+  perspective: 1000px;
+  margin: 15px 0;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+/* Camada 1 - fundo */
+.layer-1 {
+  background: #444;
+  top: 20px;
+  z-index: 1;
+}
+
+/* Camada 2 - meio */
+.layer-2 {
+  background: #333;
+  top: 10px;
+  z-index: 2;
+}
+
+/* Camada 3 - topo, com conteúdo */
+.layer-3 {
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 27px;
+  background-color: #333;
+}
+
+.layer-3 h3 {
+  color: white;
+  background: rgba(68, 68, 68, 0.8);
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 1rem 0;
+}
+
+.layer-3 a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #1e90ff;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* Hover: dar destaque com leve elevação */
+.project-card:hover .layer-1 {
+  transform: translateY(-3px);
+}
+.project-card:hover .layer-2 {
+  transform: translateY(-5px);
+}
+.project-card:hover .layer-3 {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(30, 144, 255, 0.6);
+}
+.project-card:hover .layer-3 a {
+  transform: translate(-5px, -15px);
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  background: #cce6ff;
+  padding: 0.8rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-5px);
+}
+
+.socials a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ================================ */
+/* RESPONSIVIDADE - MOBILE FIRST */
+/* ================================ */
+
+/* Menu mobile - ajustes */
+@media (max-width: 768px) {
+  /* Botão hambúrguer */
+  .hamburger {
+    display: flex;
+  }
+
+  .hero img {
+    margin: -50px auto -76px;
+    transform: scale(0.85);
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+    transform: scale(0.9); /* Redução inicial para tablets */
+    margin: -10px 0; /* Compensação de espaço */
+  }
+
+  /* Menu de navegação mobile */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    max-width: 80%;
+    background-color: #1c1c1c;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: right 0.4s ease;
+    z-index: 1000;
+    padding-top: 70px;
+    overflow-y: auto;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-menu li a {
+    display: block;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .nav-menu .logo {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  /* Animações do hambúrguer */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  /* Header */
+  header {
+    border-radius: 20px;
+    margin: 0.5rem;
+    max-width: calc(100% - 1rem);
+  }
+
+  .navbar-container {
+    padding-top: 60px;
+  }
+
+  /* Hero section */
+  .hero h1 {
+    font-size: 2.2rem;
+    padding: 0 10px;
+  }
+
+  /* Projects section */
+  .projects-section {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-header .projects-subtitle {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .projects {
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Telas muito pequenas (ex: 320px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero img {
+    margin: -50px auto -76px;
+    transform: scale(0.85);
+  }
+
+  .project-card {
+    transform: scale(0.7); /* Redução para 70% em celulares pequenos */
+    margin: -30px 0; /* Compensação maior de espaço */
+  }
+  
+  .projects-section {
+    padding: 1rem;
+  }
+
+  .layer-3 h3 {
+    font-size: 1.1rem;
+    padding: 6px 12px;
+  }
+
+  .socials a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .socials a img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Ajustes para altura pequena */
+@media (max-height: 600px) and (max-width: 768px) {
+  .nav-menu {
+    padding-top: 50px;
+    justify-content: flex-start;
+  }
+  
+  .nav-menu li {
+    margin: 8px 0;
+  }
+  
+  .nav-menu li a {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .projects-section {
+    padding: 1rem;
+  }
+}

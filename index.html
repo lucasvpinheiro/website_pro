@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas | Data Analyst</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Botão hambúrguer fixo -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <header>
+    <div class="navbar-container">
+      <div data-include="sections/navbar.html"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hello">
+      <div><img src="assets/images/Hello_web.png" alt="Hello!"></div>
+    </section>
+
+    <section class="hero">
+      <h1>I'm <span>Lucas</span>,<br>Data Analyst</h1>
+      <img src="assets/images/Profile_web.png" alt="Lucas Photo" />
+    </section>
+    
+    <section class="projects-section" id="projects">
+      <div class="projects-header">
+        <h2>Main <span style="color:#1e90ff">Projects</span></h2>
+        <span class="projects-subtitle">Projects that make up my career portfolio!</span>
+      </div>
+      <hr>
+      <div class="projects">
+        <div class="project-card">
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div class="layer layer-3" style="background-image: url('assets/images/meliodas.png');">
+            <h3>Project #1</h3>
+            <a href="#">↗</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div class="layer layer-3" style="background-image: url('assets/images/dk_zeldris.png');">
+            <h3>Project #2</h3>
+            <a href="#">↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="socials">
+      <a href="#"><img src="assets/images/git-logo.png" alt="GitHub" /></a>
+      <a href="#"><img src="assets/images/wpp-logo.png" alt="WhatsApp" /></a>
+      <a href="#"><img src="assets/images/lin-logo.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="assets/images/mail-logo.png" alt="Email" /></a>
+      <a href="#"><img src="assets/images/ytb-logo.png" alt="YouTube" /></a>
+    </div>
+  </main>
+
+  <div data-include="sections/footer.html"></div>
+</body>
+</html>
