@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Lucas — Projects</title>
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,22 +12,26 @@
   <!-- ========== HEADER / NAVBAR ========== -->
   <header>
     <div class="navbar-container">
-      <!-- Mobile adaption -->
+      <!-- Botão hamburger (mobile) -->
       <button class="hamburger" type="button" aria-label="Menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <!-- navbar main -->
+      <!-- Navbar principal -->
       <nav class="navbar">
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="projects.html" class="active">Projects</a></li>
           <li><a href="services.html">Services</a></li>
-          <li class="logo"><a href="index.html">
-            <img src="/assets/images/main_logo.png" alt="Logo Lucas">
-          </a></li>
+
+          <li class="logo">
+            <a href="index.html">
+              <img src="assets/images/main_logo.png" alt="Logo Lucas">
+            </a>
+          </li>
+
           <li><a href="resume.html">Resume</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -36,14 +41,14 @@
   </header>
 
 
+  <!-- ========== MAIN ========== -->
   <main>
-
     <!-- Projects Section -->
     <section class="projects-section">
       <div class="projects-header">
         <h2>All <span>Projects</span></h2>
         <p class="projects-subtitle">
-          These are my all projects!
+          These are all of my projects!
         </p>
       </div>
       <hr>
@@ -51,77 +56,97 @@
       <div class="projects">
         <!-- Project 1 (iGaming Analytics) -->
         <div class="project-card">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div
             class="layer layer-3"
-            style="background-image: url('/assets/images/cassino_analytics.jpg');"
-            >
+            style="background-image: url('assets/images/cassino_analytics.jpg');"
+          >
             <h3>Cassino Analytics</h3>
-            <a href="https://github.com/lucasvpinheiro/iGaming-Analytics" title="Go to Github | iGaming Projects">↗</a>
-            </div>
+            <a href="https://github.com/lucasvpinheiro/iGaming-Analytics"
+               title="Go to Github | iGaming Analytics">↗</a>
+          </div>
         </div>
 
         <!-- Project 2 (Ecommerce Analytics) -->
         <div class="project-card">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div
             class="layer layer-3"
-            style="background-image: url('/assets/images/ecommerce_analytics.png');"
-            >
+            style="background-image: url('assets/images/ecommerce_analytics.png');"
+          >
             <h3>Ecommerce Analytics</h3>
-            <a href="https://github.com/lucasvpinheiro/e-commerce-data-analyst" title="Go to Github | Ecommerce Analytics">↗</a>
-            </div>
+            <a href="https://github.com/lucasvpinheiro/e-commerce-data-analyst"
+               title="Go to Github | Ecommerce Analytics">↗</a>
+          </div>
         </div>
 
-        <!-- Project 3 (name) -->
+        <!-- Project 3 (Exemplo) -->
         <div class="project-card">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div
             class="layer layer-3"
-            style="background-image: url('img/proj3-preview.jpg');"
-            >
+            style="background-image: url('assets/images/proj3-preview.jpg');"
+          >
             <h3>Project #3</h3>
             <a href="https://link-do-projeto3.com" title="Ver Project #3">↗</a>
-            </div>
+          </div>
         </div>
 
-         <!-- Project 4 (name) -->
+        <!-- Project 4 (Traduções) -->
         <div class="project-card">
-            <div class="layer layer-1"></div>
-            <div class="layer layer-2"></div>
-            <div
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div
             class="layer layer-3"
-            style="background-image: url('assets/images/Logo\ Tradutor.png');"
-            >
+            style="background-image: url('assets/images/logo-tradutor.png');"
+          >
             <h3>Traduções [7DSGC]</h3>
-            <a href="https://link-do-projeto3.com" title="Ver Project #4">↗</a>
-            </div>
+            <a href="https://link-do-projeto4.com" title="Ver Project #4">↗</a>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
-
   </main>
-    <section class="socials">
-        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">
-        <img src="/assets/images/git-logo.png" alt="GitHub">
-        </a>
-        <a href="https://wa.me/seu-numero" target="_blank" rel="noopener">
-        <img src="/assets/images/wpp-logo.png" alt="WhatsApp">
-        </a>
-        <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
-        <img src="/assets/images/lin-logo.png" alt="LinkedIn">
-        </a>
-        <a href="mailto:email@exemplo.com">
-        <img src="/assets/images/mail-logo.png" alt="Email">
-        </a>
-        <a href="https://youtube.com/seu-canal" target="_blank" rel="noopener">
-        <img src="/assets/images/ytb-logo.png" alt="YouTube">
-        </a>
-    </section>
 
-  <div data-include="/sections/footer.html"></div>
+
+  <!-- ========== SOCIALS ========== -->
+  <section class="socials">
+    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+      <img src="assets/images/git-logo.png" alt="GitHub">
+    </a>
+    <a href="https://wa.me/seu-numero" target="_blank" rel="noopener">
+      <img src="assets/images/wpp-logo.png" alt="WhatsApp">
+    </a>
+    <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+      <img src="assets/images/lin-logo.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:email@exemplo.com">
+      <img src="assets/images/mail-logo.png" alt="Email">
+    </a>
+    <a href="https://youtube.com/seu-canal" target="_blank" rel="noopener">
+      <img src="assets/images/ytb-logo.png" alt="YouTube">
+    </a>
+  </section>
+
+
+  <!-- ========== FOOTER INCLUDE ========== -->
+  <div data-include="sections/footer.html"></div>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="js/script.js"></script>
+  <script>
+    // Carrega footer via fetch
+    document
+      .querySelectorAll('[data-include]')
+      .forEach(el => {
+        fetch(el.getAttribute('data-include'))
+          .then(res => res.text())
+          .then(html => el.innerHTML = html)
+          .catch(console.error);
+      });
+  </script>
 </body>
 </html>
