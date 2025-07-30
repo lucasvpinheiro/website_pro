@@ -50,7 +50,7 @@ main {
 /* Navbar container */
 .navbar-container {
   width: 100%;
-  padding: -15px 20px;
+  padding: 10px 20px;
 }
 
 /* Menu hambúrguer */
@@ -111,6 +111,7 @@ main {
 .nav-menu .logo img {
   height: 38px;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 /* Footer */
