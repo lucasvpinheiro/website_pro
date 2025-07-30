@@ -173,9 +173,9 @@ footer {
 .hello img {
   max-width: 80px;
   height: auto;
-  margin: 0 auto -15px; /* Margem inferior negativa */
+  margin: 0 auto -15px;
   display: block;
-  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2)); /* Profundidade */
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
 }
 
 /* Projetos */
@@ -242,21 +242,21 @@ hr {
   transition: transform 0.3s ease;
 }
 
-/* Camada 1 - fundo */
+/* Camada 1 - Background */
 .layer-1 {
   background: #444;
   top: 20px;
   z-index: 1;
 }
 
-/* Camada 2 - meio */
+/* Camada 2 - Middle */
 .layer-2 {
   background: #333;
   top: 10px;
   z-index: 2;
 }
 
-/* Camada 3 - topo, com conteúdo */
+/* Camada 3 - Top, with content preview */
 .layer-3 {
   background-size: cover;
   background-position: center;
@@ -298,7 +298,7 @@ hr {
   transition: transform 0.3s ease;
 }
 
-/* Hover: dar destaque com leve elevação */
+/* Hover: element */
 .project-card:hover .layer-1 {
   transform: translateY(-3px);
 }

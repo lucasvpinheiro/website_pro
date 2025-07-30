@@ -1,83 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Lucas Vicente</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Lucas — Projects</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <!-- Botão hambúrguer fixo -->
-  <button class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
 
+  <!-- ========== HEADER / NAVBAR ========== -->
   <header>
     <div class="navbar-container">
-      <div data-include="sections/navbar.html"></div>
+      <!-- botão hamburger para mobile -->
+      <button class="hamburger" type="button" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- nav principal -->
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li class="logo"><a href="index.html">
+            <!-- coloque sua logo aqui -->
+            <img src="/assets/images/main_logo.png" alt="Logo Lucas">
+          </a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
+
+  <!-- ========== MAIN ========== -->
   <main>
-       <section class="projects-section" id="projects">
+
+    <!-- Projects Section -->
+    <section class="projects-section">
       <div class="projects-header">
-        <h2>Main <span style="color:#1e90ff">Projects</span></h2>
-        <span class="projects-subtitle">All my projects!</span>
+        <h2>All <span>Projects</span></h2>
+        <p class="projects-subtitle">
+          Projects that make up<br>
+          my career portfolio
+        </p>
       </div>
       <hr>
+
       <div class="projects">
-          <!-- Layer Project #1 -->
+        <!-- Project 1 -->
         <div class="project-card">
-          <div class="layer layer-1"></div>
-          <div class="layer layer-2"></div>
-          <div class="layer layer-3" style="background-image: url('assets/images/meliodas.png');">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div
+            class="layer layer-3"
+            style="background-image: url('img/proj1-preview.jpg');"
+            >
             <h3>Project #1</h3>
-            <a href="#">↗</a>
-          </div>
+            <a href="https://link-do-projeto1.com" title="Ver Project #1">↗</a>
+            </div>
         </div>
 
-         <!-- Layer Project #2 -->
+        <!-- Project 2 -->
         <div class="project-card">
-          <div class="layer layer-1"></div>
-          <div class="layer layer-2"></div>
-          <div class="layer layer-3" style="background-image: url('assets/images/dk_zeldris.png');">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div
+            class="layer layer-3"
+            style="background-image: url('img/proj2-preview.jpg');"
+            >
             <h3>Project #2</h3>
-            <a href="#">↗</a>
-          </div>
-
-         <!-- Layer Project #3 -->
-        <div class="project-card">
-          <div class="layer layer-1"></div>
-          <div class="layer layer-2"></div>
-          <div class="layer layer-3" style="background-image: url('assets/images/dk_zeldris.png');">
-            <h3>Project #2</h3>
-            <a href="#">↗</a>
-          </div>
-
-         <!-- Layer Project #4 -->
-        <div class="project-card">
-          <div class="layer layer-1"></div>
-          <div class="layer layer-2"></div>
-          <div class="layer layer-3" style="background-image: url('assets/images/dk_zeldris.png');">
-            <h3>Project #2</h3>
-            <a href="#">↗</a>
-          </div>
+            <a href="https://link-do-projeto2.com" title="Ver Project #2">↗</a>
+            </div>
         </div>
-      </div>
+
+        <!-- Project 3 (novo) -->
+        <div class="project-card">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div
+            class="layer layer-3"
+            style="background-image: url('img/proj3-preview.jpg');"
+            >
+            <h3>Project #3</h3>
+            <a href="https://link-do-projeto3.com" title="Ver Project #3">↗</a>
+            </div>
+        </div>
+
+         <!-- Project 4 (novo) -->
+        <div class="project-card">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div
+            class="layer layer-3"
+            style="background-image: url('img/proj3-preview.jpg');"
+            >
+            <h3>Project #4</h3>
+            <a href="https://link-do-projeto3.com" title="Ver Project #4">↗</a>
+            </div>
+        </div>
+        </div>
     </section>
 
-    <div class="socials">
-      <a href="#"><img src="assets/images/git-logo.png" alt="GitHub" /></a>
-      <a href="#"><img src="assets/images/wpp-logo.png" alt="WhatsApp" /></a>
-      <a href="#"><img src="assets/images/lin-logo.png" alt="LinkedIn" /></a>
-      <a href="#"><img src="assets/images/mail-logo.png" alt="Email" /></a>
-      <a href="#"><img src="assets/images/ytb-logo.png" alt="YouTube" /></a>
-    </div>
+
+    <!-- (opcional) outras seções... -->
+
   </main>
 
-  <div data-include="sections/footer.html"></div>
+
+  <!-- ========== SOCIALS ========== -->
+  <section class="socials">
+    <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">
+      <img src="/assets/images/git-logo.png" alt="GitHub">
+    </a>
+    <a href="https://wa.me/seu-numero" target="_blank" rel="noopener">
+      <img src="/assets/images/wpp-logo.png" alt="WhatsApp">
+    </a>
+    <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener">
+      <img src="/assets/images/lin-logo.png" alt="LinkedIn">
+    </a>
+    <a href="mailto:email@exemplo.com">
+      <img src="/assets/images/mail-logo.png" alt="Email">
+    </a>
+    <a href="https://youtube.com/seu-canal" target="_blank" rel="noopener">
+      <img src="/assets/images/ytb-logo.png" alt="YouTube">
+    </a>
+  </section>
+
+    <div data-include="sections/footer.html"></div>
 </body>
 </html>
